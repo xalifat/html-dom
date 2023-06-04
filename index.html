@@ -1,0 +1,53 @@
+
+<html>
+<head>
+  <title>интукод</title>
+</head>
+<body>
+  <div id="main">
+      <ul id="list">
+          <li>html</li>
+          <li>css</li>
+      </ul>
+  </div>
+    <div id="copyright">(c) INTOCODE</div>
+</body>
+<script>
+	const addTitle = () => {
+	const title = document.createElement('h1')
+	title.textContent = 'Работа с DOM'
+	document.body.insertBefore(title)
+   }
+
+
+	const addLink = () => {
+		const link = document.createElement('a')
+		link.textContent = 'Статья о DOM'
+		linl.href = 'https://doka.guide/js/dom/'
+		document.getElementById('main').append(link)
+	}
+
+
+	const bgColor = (color) => {
+		document.body.style.backgroundColor = color
+	}
+
+
+	const addText = () => {
+		const li = document.createElement('li')
+		li.textContent = text
+		document.getElementById('list').append(li)
+	}
+
+
+	const removeCopyright = () => {
+		const copyright = document.createElement('copyright')
+		copyright.remove(copyright)
+	}
+	addLink()
+	addTitle()
+	bgColor()
+	addText()
+	removeCopyright()
+</script>
+</html>
